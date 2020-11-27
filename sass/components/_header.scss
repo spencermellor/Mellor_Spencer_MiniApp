@@ -1,0 +1,17 @@
+.headerContainer {
+    width: 100%;
+    border-bottom: 2px solid $headerBorder;
+}
+
+.headerImg {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+        margin-bottom: 2px;
+    }
+}
