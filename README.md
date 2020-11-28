@@ -12,6 +12,7 @@ Purpose is to use specifically use Vue to better our understanding of it. SASS, 
 - This application uses the development version of Vue to submit the assignment.  
 - The SQL database is in the `data/` folder. 
 - This is for assignment purposes only
+- Max width of intended site is 1000px. (Development)
 
 ### Authors
 
