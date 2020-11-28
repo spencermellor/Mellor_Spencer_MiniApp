@@ -1,3 +1,5 @@
+// copied from class files
+
 async function fetchData(sourceURL) {
 
 let resource = await fetch(sourceURL).then(response => {
