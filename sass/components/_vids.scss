@@ -6,6 +6,7 @@
 
     video {
         max-width: 100%;
+        border-bottom: 15px solid darkblue;
     }
 
     .vidTitle {
@@ -16,24 +17,35 @@
         font-family: $mainFont;
         border-left: 4px solid white;
         padding-left: 2rem;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: $titleFont;
+        }
     }
 
-    .vidTitle h2 {
-        text-transform: uppercase;
-        font-size: 2rem;
+    .vidPrice {
+        position: absolute;
+        color: white;
+        left: 5rem;
+        top: 9rem;
         font-family: $titleFont;
+        padding-left: 2.3rem;
+        font-size: 1.7rem;
     }
+
 
     .videosList {
+        position: absolute;
         display: flex;
-        align-content: center;
-        margin: auto;
         width: 100%;
         max-width: 1000px;
-        text-align: center;
+        bottom: 1.1rem;
+        padding-left: 3.5rem;
 
         div {
-            max-width: 30rem;
+            max-width: 10rem;
             align-content: center;
 
             &:hover {
@@ -44,7 +56,6 @@
 
         img {
             max-width: 100%;
-            border: 1px solid black;
         }
     }
 }

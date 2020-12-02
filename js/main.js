@@ -11,7 +11,6 @@ import { fetchData } from "./components/fetchData.js";
             clickedMiniVideo: '',
             miniCars: [],
             videoPlay: true,
-            lightboxShow: false,
             clickedVideo: '',
         },
 

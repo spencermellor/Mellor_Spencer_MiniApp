@@ -35,6 +35,10 @@
                 <p>{{ clickedVideo.slogan }}</p>
             </div>
 
+            <div class="vidPrice">
+                <h3>{{ clickedVideo.price }}</h3>
+            </div>
+
             <div @click="toggleVid">
                 <video ref="vid" :src="`videos/${clickedVideo.vid}`" loop autoplay muted></video>
             </div>
@@ -42,16 +46,20 @@
             <div class="videosList">
 
                 <div v-for="car in miniCars" @click="changeVid(car.car_id)">
-                    <img :src="`images/${car.img}`" :alt="car.carName">
+                    <img :src="`images/${car.thumb}`" :alt="car.carName">
                 </div>
 
             </div>
 
         </div> <!-- end of car videos -->
 
-        <h2 v-if="miniCars.length !=0" class="modelsTitle">Our Models</h2>
-        
-
+        <div class="carDescription"> <!-- car descriptions -->
+            <h2>{{ clickedVideo.carName }}</h2>
+            <p> {{clickedVideo.carDescription }}</p>
+            <hr>
+            <img :src="`images/${clickedVideo.img}`" :alt="clickedVideo.carName">
+        </div> <!-- end car descriptions -->
+`       
     </main>
 </body>
 
